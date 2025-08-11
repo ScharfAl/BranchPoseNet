@@ -12,7 +12,7 @@ import concurrent.futures
 import matplotlib
 matplotlib.use('Agg')  # Use Agg backend for non-GUI rendering
 import matplotlib.pyplot as plt
-
+import argparse
 
 import ultralytics
 from ultralytics import YOLO
@@ -159,4 +159,5 @@ for filename in all_files:
     # Cleanup temp files
     import shutil
     shutil.rmtree(dir_pred)
+
 
