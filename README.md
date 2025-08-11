@@ -30,7 +30,7 @@ For predicting on your own data just point the --dir_root to the path to the fol
 
 ### 🖥️ To run using command line (CLI): 
 ```
-python whorl_pose_detect.py --dir_root data --my_model whorl_pose_nano_1000px/weights/best.pt --alpha 0.5 --min_internodal_d 0.3 --tree_id_label treeID --semantic_label semantic  
+python whorl_pose_detect.py --dir_root data --my_model models/whorl_pose_nano_1000px/weights/best.pt --alpha 0.5 --min_internodal_d 0.3 --tree_id_label treeID --semantic_label semantic  
 ```
 
 ### 🎮 Demo version
