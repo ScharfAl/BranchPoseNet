@@ -27,7 +27,7 @@ from tools import convert_sections_to_images,process_point_cloud,get_image_size
 # Parse CLI arguments first
 parser = argparse.ArgumentParser()
 parser.add_argument("--dir_root", default="data", help="Path to root folder where .las/.laz files are stored")
-parser.add_argument("--my_model", default="whorl_pose_nano_1000px/weights/best.pt", help="Path to YOLO model weights")
+parser.add_argument("--my_model", default="models/whorl_pose_nano_1000px/weights/best.pt", help="Path to YOLO model weights")
 parser.add_argument("--alpha", type=float, default=0.5, help="Alpha value for plotting")
 parser.add_argument("--min_internodal_d", type=float, default=0.3, help="Minimum internodal distance in meters")
 parser.add_argument("--tree_id_label", default="treeID", help="Column name for tree IDs")
@@ -159,5 +159,6 @@ for filename in all_files:
     # Cleanup temp files
     import shutil
     shutil.rmtree(dir_pred)
+
 
 
